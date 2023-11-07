@@ -18,15 +18,18 @@ li {
     margin: 20px;
 }
 
-#btn {
+.btn {
     border: 2px solid;
     padding: 10px;
     text-decoration: none;
     border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s all;
 
 }
 
-#btn:hover {
+.btn:hover {
     background-color: #756c8a;
     color: white;
     border-color: #756c8a;
@@ -39,9 +42,6 @@ li {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-}
-
-a {
     color: white;
     font-weight: bold;
     transition: 0.3s all;
@@ -68,34 +68,39 @@ input {
     height: 50px;
     border-color: #008B8B;
     font-size: 15px;
-    border-radius: 7px;
     width: 400px;
+    background: #c7c4ce;
+    border-radius: 20px;
 }
 
 .fixed-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("fundo.png");
-    background-position: center center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("fundo1.png");
+    background-attachment: fixed;
     background-size: cover;
     position: relative;
     height: 100vh;
+
 }
 
 .text-type {
     text-align: center;
-    position: absolute;
+    position: relative;
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
+    text-align: center;
 }
 
 .texto {
-    font-size: 20px;
+    font-size: 17px;
     color: #666;
-    max-width: 40rem;
     line-height: 1.7;
-    margin: 20px;
-    text-align: center;
+    align-items: center;
+    max-width: 25em;
+    margin-left: 15%;
+    margin-right: 10%;
+
 }
 
 .about-texto {
@@ -103,27 +108,25 @@ input {
     color: #666;
     max-width: 40rem;
     line-height: 1.7;
-    margin-bottom: 3rem;
     text-align: justify;
-    margin: 70px;
-    padding: 20px;
+    margin: 5rem;
 }
 
 .titulos-textos {
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 100px;
+    text-align: center;
+    margin: 10px;
 }
 
-#projeto-titulo {
-    font-size: 4rem;
+.projeto-titulo {
+    font-size: 50px;
     letter-spacing: 1px;
     letter-spacing: 3px;
     text-align: center;
-    margin-bottom: 3.5rem;
     position: relative;
     color: #111;
+    padding-top: 5rem;
 }
 
 .skills {
@@ -135,6 +138,13 @@ input {
     border-radius: 5px;
     font-weight: 600;
     color: #666;
+}
+
+.skills-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 20px;
 }
 
 .contact-text {
@@ -150,14 +160,15 @@ input {
     width: 2em;
 }
 
-#about-div {
-    background: #c7c4ce;
-    border-radius: 20px;
-}
-
-#about-image {
+.about-image {
     border-radius: 7px;
     border: 5px solid #3d3f3f;
-    width: 500px;
-    margin: 40px;
+    width: 70%;
+}
+
+textarea {
+    background: #c7c4ce;
+    border-radius: 10px;
+    width: 25em;
+    border-color: #008B8B;
 }
